@@ -57,6 +57,7 @@ public class Animations : MonoBehaviour
         //littleCircleAnim.SetInteger("onCircle", 1);
         classbuttons.GetComponent<DOTweenAnimation>().DORewindAllById("downButton");
         circleAnim.GetComponent<DOTweenAnimation>().DORewind();
+        scoreText.GetComponent<DOTweenAnimation>().DORewind();
         StartCoroutine(StopAnim());
     }
 
@@ -159,7 +160,7 @@ public class Animations : MonoBehaviour
         //classScore.SetActive(false);
         //scoreAnim.SetInteger("onScore", 0);
         yield return new WaitForSeconds(1.5f);
-        scoreText.GetComponent<DOTweenAnimation>().DOPause();
+        //scoreText.GetComponent<DOTweenAnimation>().DOPause();
         StartCoroutine(viewClasses());
     }
     private IEnumerator StopAnim1()
