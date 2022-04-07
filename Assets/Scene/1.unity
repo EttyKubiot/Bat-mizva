@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 147325135}
   - component: {fileID: 147325134}
   m_Layer: 5
-  m_Name: win 2
+  m_Name: Family2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6167,7 +6167,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: 
 --- !u!1 &1048814882
 GameObject:
   m_ObjectHideFlags: 0
@@ -6595,7 +6595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movilllll: {fileID: 1830065094}
-  classs: {fileID: 0}
+  classs: {fileID: 1826954630}
   scoree: {fileID: 2075438028}
   classs2: {fileID: 147325135}
   scoree2: {fileID: 1015857674}
@@ -6605,7 +6605,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: 3a84fdad39d408b4694ab0fcb08a96f0, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
-  correctScene: 1
+  correctScene: 0
   laddingCircle: {fileID: 0}
 --- !u!4 &1140538314
 Transform:
@@ -7721,7 +7721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1391521132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8852,7 +8852,7 @@ GameObject:
   - component: {fileID: 1789449955}
   - component: {fileID: 1826954630}
   m_Layer: 5
-  m_Name: win 1
+  m_Name: Family1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9121,7 +9121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1838491074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9134,11 +9134,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.76315, y: 156.7}
+  m_AnchoredPosition: {x: -85.76312, y: 156.69995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1838491075
@@ -11457,7 +11457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: 
 --- !u!1 &2095775806
 GameObject:
   m_ObjectHideFlags: 0
@@ -11474,7 +11474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2095775807
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11487,7 +11487,7 @@ RectTransform:
   m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

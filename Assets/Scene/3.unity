@@ -6605,7 +6605,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: 3a84fdad39d408b4694ab0fcb08a96f0, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
-  correctScene: 3
+  correctScene: 2
   laddingCircle: {fileID: 0}
 --- !u!4 &1140538314
 Transform:

@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
    {
         //movilllll.GetComponent<Animator>().SetInteger("end", 0);
 
-        SceneManager.LoadScene(correctScene + 1);
+        SceneManager.LoadScene(correctScene + 2);
 
     }
 

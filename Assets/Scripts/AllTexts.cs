@@ -59,7 +59,7 @@ public class AllTexts : MonoBehaviour
     {
         gameManager.ClassDataSelected = classData;
         scoreText.text = gameManager.ClassDataSelected.ClassName;
-        //scoreText.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(false);
         Debug.Log(gameManager.ClassDataSelected);
         gameManager.SetActiveText = false;
         gameManager.TextsetActive?.Invoke();
@@ -75,7 +75,7 @@ public class AllTexts : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         //scoreAnim.SetInteger("onScore", 0);
-        //scoreText.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(false);
         yield return new WaitForSeconds(2f);
         gameManager.SetActiveText = true;
         yield return new WaitForSeconds(0.1f);
