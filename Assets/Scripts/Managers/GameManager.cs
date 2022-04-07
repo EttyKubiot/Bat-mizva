@@ -137,12 +137,17 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void SetMovil()
+    {
+        movilllll.gameObject.SetActive(true);
+    }
    
    public void NextScene()
    {
-        movilllll.GetComponent<Animator>().SetInteger("end", 0);
+        //movilllll.GetComponent<Animator>().SetInteger("end", 0);
 
-        SceneManager.LoadScene(correctScene + 2);
+        SceneManager.LoadScene(correctScene + 1);
 
     }
 
