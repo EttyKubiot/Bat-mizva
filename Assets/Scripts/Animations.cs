@@ -10,13 +10,13 @@ public class Animations : MonoBehaviour
     [SerializeField] private GameManager gameManager;
   
   
-    [SerializeField] private Animator imageAnim;
+    //[SerializeField] private Animator imageAnim;
     //[SerializeField] private Animator littleCircleAnim;
-    [SerializeField] private Animator giftAnim;
+    //[SerializeField] private Animator giftAnim;
    
     [SerializeField] private Image circleAnim;
    
-    [SerializeField] private Animator movilAnim;
+    //[SerializeField] private Animator movilAnim;
 
     [SerializeField] private GameObject backroundBlue;
     [SerializeField] private GameObject classbuttons;
@@ -39,14 +39,14 @@ public class Animations : MonoBehaviour
         //gameManager.ViewClass += CallCoroutine;
         //gameManager.OnWrongClick += NotCorrect2;
         gameManager.Leadingclass += Leading;
-        imageAnim.SetInteger("onImage", 6);
-        imageAnim.SetInteger("onImage", gameManager.CorrectScene);
+        //imageAnim.SetInteger("onImage", 6);
+        //imageAnim.SetInteger("onImage", gameManager.CorrectScene);
         //littleCircleAnim.SetInteger("onCircle", 1);
         backroundBlue.gameObject.SetActive(false);
         scoreText.GetComponent<DOTweenAnimation>().DOPause();
         yield return new WaitForSeconds(2f);
         StartCoroutine(viewClasses());
-        StartCoroutine(StopAnim1());
+        //StartCoroutine(StopAnim1());
     }
 
    
@@ -101,24 +101,24 @@ public class Animations : MonoBehaviour
 
     private void GetGift(int index)
     {
-        if(gameManager.CorrectScene == 0)
-        {
-            giftAnim.SetInteger("onBonus", index);
-        }
-        else if (gameManager.CorrectScene == 1)
-        {
-            giftAnim.SetInteger("onBonus", index+2);
-        }
-        else if (gameManager.CorrectScene == 2)
-        {
-            giftAnim.SetInteger("onBonus", index+4);
-        }
-        else if (gameManager.CorrectScene == 3)
-        {
-            giftAnim.SetInteger("onBonus", index + 6);
-        }
+        //if(gameManager.CorrectScene == 0)
+        //{
+        //    giftAnim.SetInteger("onBonus", index);
+        //}
+        //else if (gameManager.CorrectScene == 1)
+        //{
+        //    giftAnim.SetInteger("onBonus", index+2);
+        //}
+        //else if (gameManager.CorrectScene == 2)
+        //{
+        //    giftAnim.SetInteger("onBonus", index+4);
+        //}
+        //else if (gameManager.CorrectScene == 3)
+        //{
+        //    giftAnim.SetInteger("onBonus", index + 6);
+        //}
 
-        StartCoroutine(StopAnim1());
+        //StartCoroutine(StopAnim1());
     }
 
     //private void CallCoroutine()
@@ -171,14 +171,14 @@ public class Animations : MonoBehaviour
         //scoreText.GetComponent<DOTweenAnimation>().DOPause();
         StartCoroutine(viewClasses());
     }
-    private IEnumerator StopAnim1()
-    {
+    //private IEnumerator StopAnim1()
+    //{
         
-        yield return new WaitForSeconds(2f);
-        //littleCircleAnim.SetInteger("onCircle", 0);
-        yield return new WaitForSeconds(2f);
-        giftAnim.SetInteger("onBonus", 0);
-    }
+    //    yield return new WaitForSeconds(2f);
+    //    //littleCircleAnim.SetInteger("onCircle", 0);
+    //    //yield return new WaitForSeconds(2f);
+    //    //giftAnim.SetInteger("onBonus", 0);
+    //}
 
     
 }

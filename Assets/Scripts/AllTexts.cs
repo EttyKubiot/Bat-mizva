@@ -9,12 +9,12 @@ public class AllTexts : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Text scoreText;
-    [SerializeField] private Text[] giftText;
-    [SerializeField] private string[] giftsText;
-    Dictionary<int, string> allGifts = new Dictionary<int, string>();
+    //[SerializeField] private Text[] giftText;
+    //[SerializeField] private string[] giftsText;
+    //Dictionary<int, string> allGifts = new Dictionary<int, string>();
 
-    private int BonusNum = 0;
-    [SerializeField] private GameObject logo;
+    //private int BonusNum = 0;
+    //[SerializeField] private GameObject logo;
 
     void Start()
     {
@@ -22,12 +22,12 @@ public class AllTexts : MonoBehaviour
         gameManager.ClassSelected += EndSelectClass3;
         gameManager.ViewClass += CallCoroutine3;
         gameManager.OnWrongClick += NotCorrect3;
-        gameManager.OnGift += GetGift3;
+        //gameManager.OnGift += GetGift3;
       
-        if (gameManager.CorrectScene == 4)
-        {
-            PrintClassList();
-        }
+        //if (gameManager.CorrectScene == 4)
+        //{
+        //    PrintClassList();
+        //}
     }
 
     private void Correct3()
@@ -38,20 +38,20 @@ public class AllTexts : MonoBehaviour
        
         Debug.Log("score" + gameManager.ClassDataSelected.Score);
         Debug.Log(gameManager.ClassDataSelected.ClassName);
-        StartCoroutine(Feedback3(1));
+        //StartCoroutine(Feedback3(1));
     }
 
-    private void GetGift3(int index)
-    {
-        AddBonus3(gameManager.ClassDataSelected.ClassName);
-        StartCoroutine(Feedback3(3));
+    //private void GetGift3(int index)
+    //{
+    //    AddBonus3(gameManager.ClassDataSelected.ClassName);
+    //    //StartCoroutine(Feedback3(3));
 
 
-    }
+    //}
 
     private void NotCorrect3()
     {
-        StartCoroutine(Feedback3(2));
+        //StartCoroutine(Feedback3(2));
         StartCoroutine(viewClasses3());
     }
 
@@ -89,81 +89,81 @@ public class AllTexts : MonoBehaviour
         scoreText.gameObject.SetActive(true);
     }
 
-    private IEnumerator Feedback3(int ifCorrect)
-    {
+    //private IEnumerator Feedback3(int ifCorrect)
+    //{
 
-        yield return new WaitForSeconds(2f);
+    //    yield return new WaitForSeconds(2f);
 
-        if (ifCorrect == 1)
-        {
-            gameManager.Feedback1.text = "!יפוי";
-            gameManager.Feedback2.text = "!הרושק תא";
-        }
-        else if (ifCorrect == 2)
-        {
-            gameManager.Feedback1.text = "...מממ";
-            gameManager.Feedback2.text = "?רשקה המ";
+    //    if (ifCorrect == 1)
+    //    {
+    //        gameManager.Feedback1.text = "!יפוי";
+    //        gameManager.Feedback2.text = "!הרושק תא";
+    //    }
+    //    else if (ifCorrect == 2)
+    //    {
+    //        gameManager.Feedback1.text = "...מממ";
+    //        gameManager.Feedback2.text = "?רשקה המ";
 
-        }
-        else
-        {
-            gameManager.Feedback1.text = "!תיכז";
-            gameManager.Feedback2.text = "!ךילע רופת";
-        }
+    //    }
+    //    else
+    //    {
+    //        gameManager.Feedback1.text = "!תיכז";
+    //        gameManager.Feedback2.text = "!ךילע רופת";
+    //    }
 
-        gameManager.Feedback1.gameObject.SetActive(true);
-        gameManager.Feedback2.gameObject.SetActive(true);
-        logo.gameObject.SetActive(true);
+    //    gameManager.Feedback1.gameObject.SetActive(true);
+    //    gameManager.Feedback2.gameObject.SetActive(true);
+    //    logo.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(4f);
+    //    yield return new WaitForSeconds(4f);
 
-        gameManager.Feedback1.gameObject.SetActive(false);
-        gameManager.Feedback2.gameObject.SetActive(false);
-        logo.gameObject.SetActive(false);
+    //    gameManager.Feedback1.gameObject.SetActive(false);
+    //    gameManager.Feedback2.gameObject.SetActive(false);
+    //    logo.gameObject.SetActive(false);
 
 
-    }
+    //}
 
-    private void AddBonus3(string className)
-    {
-        //giftText[gameManager.CorrectScene].text = className;
-        //giftsText[gameManager.CorrectScene] = className;
-        giftsText[BonusNum] = className;
+    //private void AddBonus3(string className)
+    //{
+    //    //giftText[gameManager.CorrectScene].text = className;
+    //    //giftsText[gameManager.CorrectScene] = className;
+    //    giftsText[BonusNum] = className;
 
-        if (gameManager.CorrectScene == 0)
-        {
-            PlayerPrefs.SetString("Bonus", giftsText[BonusNum]);
-            Debug.Log("Bonus");
-        }
+    //    if (gameManager.CorrectScene == 0)
+    //    {
+    //        PlayerPrefs.SetString("Bonus", giftsText[BonusNum]);
+    //        Debug.Log("Bonus");
+    //    }
 
-        else if(gameManager.CorrectScene == 1)
-        {
+    //    else if(gameManager.CorrectScene == 1)
+    //    {
             
-            PlayerPrefs.SetString("Bonus1", giftsText[BonusNum]);
-            Debug.Log("Bonus1");
-        }
-        else if (gameManager.CorrectScene == 2)
-        {
+    //        PlayerPrefs.SetString("Bonus1", giftsText[BonusNum]);
+    //        Debug.Log("Bonus1");
+    //    }
+    //    else if (gameManager.CorrectScene == 2)
+    //    {
             
             
-            PlayerPrefs.SetString("Bonus2", giftsText[BonusNum]);
-            Debug.Log("Bonus2");
-        }
-        else if (gameManager.CorrectScene == 3)
-        {
+    //        PlayerPrefs.SetString("Bonus2", giftsText[BonusNum]);
+    //        Debug.Log("Bonus2");
+    //    }
+    //    else if (gameManager.CorrectScene == 3)
+    //    {
                    
-            PlayerPrefs.SetString("Bonus3", giftsText[BonusNum]);
-            Debug.Log("Bonus3" + giftsText[BonusNum].ToString());
-        }
-        else
-        {
-            return;
-        }
+    //        PlayerPrefs.SetString("Bonus3", giftsText[BonusNum]);
+    //        Debug.Log("Bonus3" + giftsText[BonusNum].ToString());
+    //    }
+    //    else
+    //    {
+    //        return;
+    //    }
 
-        PlayerPrefs.Save();
-         BonusNum++;
-    }
-    //    allGifts.Add(gameManager.CorrectScene, className);
+    //    PlayerPrefs.Save();
+    //     BonusNum++;
+    //}
+    ////    allGifts.Add(gameManager.CorrectScene, className);
 
     //   
 
@@ -171,20 +171,20 @@ public class AllTexts : MonoBehaviour
     //    Debug.Log(giftsText);
     //}
 
-    private void PrintClassList()
-    {
+    //private void PrintClassList()
+    //{
        
-        giftText[0].text = PlayerPrefs.GetString("Bonus", "");
+    //    giftText[0].text = PlayerPrefs.GetString("Bonus", "");
        
-        giftText[1].text = PlayerPrefs.GetString("Bonus1", ""); 
+    //    giftText[1].text = PlayerPrefs.GetString("Bonus1", ""); 
        
-        giftText[2].text = PlayerPrefs.GetString("Bonus2", "");
+    //    giftText[2].text = PlayerPrefs.GetString("Bonus2", "");
        
-        giftText[3].text = PlayerPrefs.GetString("Bonus3", ""); 
+    //    giftText[3].text = PlayerPrefs.GetString("Bonus3", ""); 
        
        
 
-    }
+    //}
 
 }
 
