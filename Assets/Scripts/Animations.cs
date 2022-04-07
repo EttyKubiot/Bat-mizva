@@ -34,6 +34,7 @@ public class Animations : MonoBehaviour
 
         gameManager.OnCorrectClick += Correct2;
         gameManager.ClassSelected += EndSelectClass2;
+        gameManager.OnWrongClick += NotCorrect2;
         gameManager.OnGift += GetGift;
         //gameManager.ViewClass += CallCoroutine;
         //gameManager.OnWrongClick += NotCorrect2;
@@ -58,6 +59,13 @@ public class Animations : MonoBehaviour
         classbuttons.GetComponent<DOTweenAnimation>().DORewindAllById("downButton");
         circleAnim.GetComponent<DOTweenAnimation>().DORewind();
         scoreText.GetComponent<DOTweenAnimation>().DORewind();
+        StartCoroutine(StopAnim());
+    }
+
+    public void NotCorrect2()
+    {
+        classbuttons.GetComponent<DOTweenAnimation>().DORewindAllById("downButton");
+        circleAnim.GetComponent<DOTweenAnimation>().DORewind();
         StartCoroutine(StopAnim());
     }
 
@@ -150,12 +158,12 @@ public class Animations : MonoBehaviour
 
     private IEnumerator StopAnim()
     {
-        yield return new WaitForSeconds(1f);
+        //yield return new WaitForSeconds(1f);
 
         
 
         //littleCircleAnim.SetInteger("onCircle", 0);
-        yield return new WaitForSeconds(2f);
+        //yield return new WaitForSeconds(2f);
       
         //classScore.SetActive(false);
         //scoreAnim.SetInteger("onScore", 0);
