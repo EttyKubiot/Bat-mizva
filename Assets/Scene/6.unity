@@ -357,7 +357,6 @@ MonoBehaviour:
   gameManager: {fileID: 1140538313}
   classManager: {fileID: 1182094713}
   pairData2: []
-  particles: {fileID: 0}
 --- !u!4 &34863479
 Transform:
   m_ObjectHideFlags: 0
@@ -809,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &147325133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6186,7 +6185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1055669747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6595,7 +6594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movilllll: {fileID: 1830065094}
-  classs: {fileID: 0}
+  classs: {fileID: 1826954630}
   scoree: {fileID: 2075438028}
   classs2: {fileID: 147325135}
   scoree2: {fileID: 1015857674}
@@ -10426,8 +10425,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1140538313}
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

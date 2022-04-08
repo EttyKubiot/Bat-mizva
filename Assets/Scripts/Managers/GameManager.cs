@@ -68,25 +68,25 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public Text Feedback1
-    {
-        get { return feedback1; }
-        set
-        {
-            feedback1 = value;
-        }
+    //public Text Feedback1
+    //{
+    //    get { return feedback1; }
+    //    set
+    //    {
+    //        feedback1 = value;
+    //    }
 
-    }
+    //}
 
-    public Text Feedback2
-    {
-        get { return feedback2; }
-        set
-        {
-            feedback2 = value;
-        }
+    //public Text Feedback2
+    //{
+    //    get { return feedback2; }
+    //    set
+    //    {
+    //        feedback2 = value;
+    //    }
 
-    }
+    //}
 
     
     public int CorrectClicks
@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
         {
             correctClicks = value;
           
-            if (correctClicks >= 8)
+            if (correctClicks >= 10)
             {
                
                 Movilclass?.Invoke();

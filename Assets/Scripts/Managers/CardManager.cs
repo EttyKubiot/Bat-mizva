@@ -18,7 +18,7 @@ public class CardManager : MonoBehaviour
     [SerializeField] private ClassManager classManager;
     [SerializeField] private PairData[] pairData2;
 
-    [SerializeField] private ParticleSystem particles;
+    //[SerializeField] private ParticleSystem particles;
 
     private int indexButtonClicked1;
     private int indexButtonClicked2;
@@ -159,7 +159,7 @@ public class CardManager : MonoBehaviour
 
         if (indexButtonClicked1 == 1 && gameManager.CorrectScene != 4)
         {
-            particles.Play();
+            //particles.Play();
            
             gameManager.OnGift?.Invoke(indexButtonClicked1);
             //gameManager.OnCorrectClick?.Invoke();

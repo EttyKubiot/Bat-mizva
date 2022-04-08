@@ -15,10 +15,11 @@ MonoBehaviour:
   pairName: Pair 10
   group: 2
   indexPair: 9
-  sprite: {fileID: 21300000, guid: 2157322c250311940abbff0db15c84ea, type: 3}
+  sprite: {fileID: 21300000, guid: 3c55e8dc39645b646b0bf17ff1fd0c78, type: 3}
   sprite2:
-  - {fileID: 21300000, guid: 2157322c250311940abbff0db15c84ea, type: 3}
-  - {fileID: 21300000, guid: ebf43bd09048ddc48b8120dd3b35a7b7, type: 3}
-  - {fileID: 21300000, guid: 49f2fe030e3b4b7438d86483645b612a, type: 3}
-  - {fileID: 21300000, guid: ea1a5070a2b043e4b992a1184753832a, type: 3}
-  - {fileID: 21300000, guid: fbad32a1e81ec3c41b255eca6480183b, type: 3}
+  - {fileID: 21300000, guid: 3c55e8dc39645b646b0bf17ff1fd0c78, type: 3}
+  - {fileID: 21300000, guid: 6716065630b433f4fb51d0fa1b3f3200, type: 3}
+  - {fileID: 21300000, guid: aac394037eb0e7a4ca4f9b620e0fd06f, type: 3}
+  - {fileID: 21300000, guid: 6716065630b433f4fb51d0fa1b3f3200, type: 3}
+  - {fileID: 21300000, guid: 6716065630b433f4fb51d0fa1b3f3200, type: 3}
+  - {fileID: 21300000, guid: 9e647c281768db448b8ca4635e33360b, type: 3}

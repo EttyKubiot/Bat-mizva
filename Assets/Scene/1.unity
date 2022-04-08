@@ -357,7 +357,6 @@ MonoBehaviour:
   gameManager: {fileID: 1140538313}
   classManager: {fileID: 1182094713}
   pairData2: []
-  particles: {fileID: 0}
 --- !u!4 &34863479
 Transform:
   m_ObjectHideFlags: 0
@@ -773,10 +772,10 @@ MonoBehaviour:
   movilllll: {fileID: 1830065094}
   laddingCircle: {fileID: 0}
   textTittle: {fileID: 0}
-  textClass: {fileID: 0}
-  textScore: {fileID: 0}
-  textClass2: {fileID: 0}
-  textScore2: {fileID: 0}
+  textClass: {fileID: 1826954630}
+  textScore: {fileID: 2075438028}
+  textClass2: {fileID: 147325135}
+  textScore2: {fileID: 1015857674}
 --- !u!4 &131301953
 Transform:
   m_ObjectHideFlags: 0
@@ -7721,7 +7720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1391521132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8082,7 +8081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1420128166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10169,8 +10168,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1140538313}
-        m_MethodName: SetMovil
+      - m_Target: {fileID: 1182094713}
+        m_MethodName: LeadingClass
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10426,8 +10425,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1140538313}
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

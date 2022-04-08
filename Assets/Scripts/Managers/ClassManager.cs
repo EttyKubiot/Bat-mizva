@@ -16,6 +16,8 @@ public class ClassManager : MonoBehaviour
         //{
         //    allclassData[i].Score = 0;
         //}
+
+        gameManager.Movilclass += LeadingClass;
     }
 
 
@@ -32,8 +34,8 @@ public class ClassManager : MonoBehaviour
     public void LeadingClass()
     {
         //Turn off the Feedback
-        gameManager.Feedback1.gameObject.SetActive(false);
-        gameManager.Feedback2.gameObject.SetActive(false);
+        //gameManager.Feedback1.gameObject.SetActive(false);
+        //gameManager.Feedback2.gameObject.SetActive(false);
 
         //A loop that goes over the score of all classes and identifies what is the highest score
         int max = allclassData[0].Score;
